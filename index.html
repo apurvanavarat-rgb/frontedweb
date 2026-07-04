@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel ="stylesheet" href="style.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Result Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+
+<div class="container">
+
+    <!-- LEFT PANEL -->
+
+    <div class="left-panel">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+
+        <h1>College Result<br>Analysis Portal</h1>
+
+        <h3>Teachers Portal</h3>
+
+        <p>
+            Upload, Analyze and Track
+            Student Results with Ease
+        </p>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+
+    <div class="right-panel">
+
+        <div class="login-card">
+
+            <h2>Welcome Back!</h2>
+
+            <span>Login to your account</span>
+
+            <form>
+
+                <label>User ID</label>
+
+                <input type="text"
+                placeholder="Enter User ID">
+
+                <label>Password</label>
+
+                <div class="password-box">
+
+                    <input type="password" id="password"
+                    placeholder="Enter Password">
+
+                    <i class="fa-solid fa-eye"
+                        onclick="togglePassword()"></i>
+                    </i>
+
+                </div>
+
+                <div class="options">
+
+                    <label class="remember">
+
+                        <input type="checkbox">
+
+                        Remember me
+
+                    </label>
+
+                    <a href="#">Forgot Password?</a>
+
+                </div>
+
+                <button type="button" onclick="login()">
+                    Login
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="footer">
+            © 2026 College Portal. All rights reserved.
+        </div>
+
+    </div>
+
+</div>
+<script>
+function login() {
+
+let user = document.getElementById("user").value;
+let pass = document.getElementById("pass").value;
+
+if(user=="teacher" && pass=="1234"){
+    window.location.href="dashboard.html";
+}
+else{
+    alert("Invalid User ID or Password");
+}
+
+}
+</script>
+<script>
+function togglePassword() {
+    let password = document.getElementById("password");
+
+    if (password.type === "password") {
+        password.type = "text";
+    } else {
+        password.type = "password";
+    }
+}
+</script>
+<script>
+function login() {
+    window.location.href = "dashboard.html";
+}
+</script>
+</body>
+
+
+</html>

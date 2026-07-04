@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KT Analysis</title>
+
+<link rel="stylesheet" href="kt.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+<i class="fa-solid fa-graduation-cap"></i>
+<h2>CRAP</h2>
+<p>College Result Analysis Portal</p>
+</div>
+
+<ul>
+
+<li onclick="window.location.href='dashboard.html'">
+<i class="fa-solid fa-house"></i> Dashboard
+</li>
+
+<li onclick="window.location.href='upload.html'">
+<i class="fa-solid fa-upload"></i> Upload Result
+</li>
+
+<li onclick="window.location.href='search-result.html'">
+<i class="fa-solid fa-magnifying-glass"></i> Search Result
+</li>
+
+<li onclick="window.location.href='subject.html'">
+<i class="fa-solid fa-chart-column"></i> Subject Analysis
+</li>
+
+<li class="active">
+<i class="fa-solid fa-circle-exclamation"></i> KT Analysis
+</li>
+
+<li onclick="window.location.href='topper.html'">
+<i class="fa-solid fa-trophy"></i> Topper List
+</li>
+
+<li onclick="window.location.href='reports.html'">
+<i class="fa-solid fa-file"></i> Reports
+</li>
+
+<li onclick="window.location.href='settings.html'">
+<i class="fa-solid fa-gear"></i> Settings
+</li>
+
+<li onclick="window.location.href='index.html'">
+<i class="fa-solid fa-right-from-bracket"></i> Logout
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<h1>KT Analysis</h1>
+
+<div class="analysis-box">
+
+<label>Department</label>
+
+<select id="department">
+<option value="">Select Department</option>
+<option>BSc IT</option>
+<option>BCom</option>
+<option>BMS</option>
+</select>
+
+<label>Semester</label>
+
+<select id="semester">
+<option value="">Select Semester</option>
+<option>Semester 1</option>
+<option>Semester 2</option>
+<option>Semester 3</option>
+<option>Semester 4</option>
+<option>Semester 5</option>
+<option>Semester 6</option>
+</select>
+
+<label>Subject</label>
+
+<select id="subject">
+<option value="">Select Subject</option>
+</select>
+
+<button onclick="analyzeKT()">
+Analyze KT
+</button>
+
+</div>
+
+<div class="table-box">
+
+<h2>KT Statistics</h2>
+
+<table>
+
+<tr>
+<th>Subject</th>
+<th>Total Students</th>
+<th>KT Students</th>
+<th>KT %</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td colspan="5">
+No data available.
+</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="kt.js"></script>
+
+</body>
+</html>

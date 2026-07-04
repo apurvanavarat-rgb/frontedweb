@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - College Result Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-circle-small">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h3>Result Portal</h3>
+            </div>
+            
+            <nav class="sidebar-menu">
+                <a href="dashboard.html" class="menu-item active">
+                    <i class="fa-solid fa-grid-2"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="upload-result.html" class="menu-item">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span>Upload Result</span>
+                </a>
+                <a href="search-result.html" class="menu-item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Search Result</span>
+                </a>
+                <a href="subject-analysis.html" class="menu-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Subject Analysis</span>
+                </a>
+                <a href="kt-analysis.html" class="menu-item">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span>KT Analysis</span>
+                </a>
+                <a href="topper-list.html" class="menu-item">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span>Topper List</span>
+                </a>
+                <a href="reports.html" class="menu-item">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>Reports</span>
+                </a>
+                <a href="settings.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+                <a href="index.html" class="menu-item logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Navbar -->
+            <header class="top-navbar">
+                <div class="nav-left">
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="nav-right">
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div class="profile">
+                        <img src="https://i.pravatar.cc/40" alt="Profile">
+                        <span>Admin</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-content">
+                <!-- Stat Cards - 4 Colored Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card blue">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <p>Total Students</p>
+                            <h3 id="totalStudents">0</h3>
+                        </div>
+                    </div>
+
+                    <div class="stat-card green">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="stat-info">
+                            <p>Total Passed</p>
+                            <h3 id="totalPassed">0</h3>
+                        </div>
+                    </div>
+
+                    <div class="stat-card red">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <div class="stat-info">
+                            <p>Total KT</p>
+                            <h3 id="totalKT">0</h3>
+                        </div>
+                    </div>
+
+                    <div class="stat-card purple">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-percent"></i>
+                        </div>
+                        <div class="stat-info">
+                            <p>Pass Percentage</p>
+                            <h3 id="passPercent">0%</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Section - Pie + Bar -->
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <h4>Result Summary</h4>
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h4>Department Wise Performance</h4>
+                        <canvas id="barChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Recent Results Table -->
+                <div class="table-card">
+                    <div class="table-header">
+                        <h4>Recent Results</h4>
+                        <button class="btn-view-all">View All</button>
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Roll No</th>
+                                <th>Student Name</th>
+                                <th>Department</th>
+                                <th>Semester</th>
+                                <th>Percentage</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="recentResultsTable">
+                            <tr>
+                                <td colspan="6" class="no-data">No data available. Upload results first.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

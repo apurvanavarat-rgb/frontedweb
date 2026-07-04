@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reports</title>
+
+<link rel="stylesheet" href="reports.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+<i class="fa-solid fa-graduation-cap"></i>
+<h2>CRAP</h2>
+<p>College Result Analysis Portal</p>
+</div>
+
+<ul>
+
+<li onclick="window.location.href='dashboard.html'">
+<i class="fa-solid fa-house"></i> Dashboard
+</li>
+
+<li onclick="window.location.href='upload.html'">
+<i class="fa-solid fa-upload"></i> Upload Result
+</li>
+
+<li onclick="window.location.href='search-result.html'">
+<i class="fa-solid fa-magnifying-glass"></i> Search Result
+</li>
+
+<li onclick="window.location.href='subject.html'">
+<i class="fa-solid fa-chart-column"></i> Subject Analysis
+</li>
+
+<li onclick="window.location.href='kt.html'">
+<i class="fa-solid fa-circle-exclamation"></i> KT Analysis
+</li>
+
+<li onclick="window.location.href='topper.html'">
+<i class="fa-solid fa-trophy"></i> Topper List
+</li>
+
+<li class="active">
+<i class="fa-solid fa-file-lines"></i> Reports
+</li>
+
+<li onclick="window.location.href='settings.html'">
+<i class="fa-solid fa-gear"></i> Settings
+</li>
+
+<li onclick="window.location.href='index.html'">
+<i class="fa-solid fa-right-from-bracket"></i> Logout
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<h1>Reports</h1>
+
+<div class="report-box">
+
+<button onclick="downloadResultReport()">
+📄 Download Result Report
+</button>
+
+<button onclick="downloadSubjectReport()">
+📊 Download Subject Analysis
+</button>
+
+<button onclick="downloadKTReport()">
+❌ Download KT Report
+</button>
+
+<button onclick="downloadTopperReport()">
+🏆 Download Topper List
+</button>
+
+<button onclick="downloadExcelReport()">
+📗 Download Excel Report
+</button>
+
+<button onclick="downloadPDFReport()">
+📕 Download PDF Report
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="reports.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+.container{
+    display:flex;
+    width:100%;
+    height:100vh;
+}
+
+/* LEFT SIDE */
+
+.left-panel{
+    width:30%;
+    background:linear-gradient(180deg,#1565c0,#0d47a1);
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.logo{
+    width:100px;
+    height:100px;
+    background:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.logo i{
+    font-size:45px;
+    color:#1565c0;
+}
+
+.left-panel h1{
+    font-size:32px;
+    line-height:42px;
+    margin-bottom:30px;
+}
+
+.left-panel h3{
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+.left-panel p{
+    font-size:16px;
+    line-height:28px;
+    color:#e8f1ff;
+}
+
+/* RIGHT SIDE */
+
+.right-panel{
+    width:70%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    background:#ffffff;
+}
+
+.login-card{
+    width:420px;
+    background:#fff;
+    border-radius:18px;
+    padding:40px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.12);
+}
+
+.login-card h2{
+    text-align:center;
+    color:#0d47a1;
+    margin-bottom:8px;
+    font-size:30px;
+}
+
+.login-card span{
+    display:block;
+    text-align:center;
+    color:#777;
+    margin-bottom:30px;
+}
+
+.login-card label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#333;
+}
+
+.login-card input{
+    width:100%;
+    padding:13px;
+    border:1px solid #dcdcdc;
+    border-radius:8px;
+    outline:none;
+    margin-bottom:18px;
+    font-size:15px;
+}
+
+.password-box{
+    position:relative;
+}
+
+.password-box i{
+    position:absolute;
+    right:15px;
+    top:15px;
+    color:#888;
+    cursor:pointer;
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+.options a{
+    text-decoration:none;
+    color:#1565c0;
+    font-weight:600;
+}
+
+.remember{
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+.remember input{
+    width:auto;
+    margin:0;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    background:#1565c0;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#0d47a1;
+}
+
+.footer{
+    position:absolute;
+    bottom:20px;
+    color:#888;
+    font-size:14px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Result</title>
+
+    <link rel="stylesheet" href="upload.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>CRAP</h2>
+            <p>College Result Analysis Portal</p>
+        </div>
+
+        <ul>
+
+            <li onclick="window.location.href='dashboard.html'">
+                <i class="fa-solid fa-house"></i> Dashboard
+            </li>
+
+            <li class="active">
+                <i class="fa-solid fa-upload"></i> Upload Result
+            </li>
+
+            <li onclick="window.location.href='search-result.html'">
+                <i class="fa-solid fa-magnifying-glass"></i> Search Result
+            </li>
+
+            <li><i class="fa-solid fa-chart-column"></i> Subject Analysis</li>
+
+            <li><i class="fa-solid fa-circle-exclamation"></i> KT Analysis</li>
+
+            <li><i class="fa-solid fa-trophy"></i> Topper List</li>
+
+            <li><i class="fa-solid fa-file"></i> Reports</li>
+
+            <li><i class="fa-solid fa-gear"></i> Settings</li>
+
+            <li onclick="window.location.href='index.html'">
+                <i class="fa-solid fa-right-from-bracket"></i> Logout
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main -->
+
+    <div class="main">
+
+        <h1>Upload Result</h1>
+
+        <div class="upload-box">
+
+            <label>Department</label>
+            <select>
+                <option>Select Department</option>
+                <option>BSc IT</option>
+                <option>BCom</option>
+                <option>BMS</option>
+                <option>BCS</option>
+                <option>BDS</option>
+                <option>BAF</option>
+            </select>
+
+            <label>Semester</label>
+            <select>
+                <option>Select Semester</option>
+                <option>Semester 1</option>
+                <option>Semester 2</option>
+                <option>Semester 3</option>
+                <option>Semester 4</option>
+                <option>Semester 5</option>
+                <option>Semester 6</option>
+                
+            </select>
+
+            <label>Upload Result File</label>
+
+            <input type="file" id="resultfile" accept=".xlsx,.xls">
+
+            <button onclick="uploadResult()"Upload Result></button>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="upload.js"></script>
+
+</body>
+</html>
