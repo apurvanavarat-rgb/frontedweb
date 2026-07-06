@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel ="stylesheet" href="style.css"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Result Portal</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
 
-
 <div class="container">
 
     <!-- LEFT PANEL -->
-
     <div class="left-panel">
 
         <div class="logo">
@@ -31,62 +28,59 @@
         <h3>Teachers Portal</h3>
 
         <p>
-            Upload, Analyze and Track
-            Student Results with Ease
+            Upload, Analyze and Track Student Results with Ease
         </p>
 
     </div>
 
     <!-- RIGHT PANEL -->
-
     <div class="right-panel">
 
         <div class="login-card">
 
             <h2>Welcome Back!</h2>
-
             <span>Login to your account</span>
 
             <form>
 
                 <label>User ID</label>
 
-                <input type="text" id="username"
-                placeholder="Enter User ID">
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter User ID"
+                >
 
                 <label>Password</label>
 
                 <div class="password-box">
 
-                    <input type="password" id="password"
-                    placeholder="Enter Password">
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter Password"
+                    >
 
                     <i class="fa-solid fa-eye"
-                        onclick="togglePassword()"></i>
-                    </i>
+                       onclick="togglePassword()"></i>
 
                 </div>
-                </div>
-
-<button type="button" class="login-btn" onclick="login()">Login</button>
-
-<div class="options">
 
                 <div class="options">
 
                     <label class="remember">
-
                         <input type="checkbox">
-
                         Remember me
-
                     </label>
 
                     <a href="#">Forgot Password?</a>
 
                 </div>
 
-                <button type="button" onclick="login()">
+                <button
+                    type="button"
+                    class="login-btn"
+                    onclick="login()">
                     Login
                 </button>
 
@@ -101,7 +95,6 @@
     </div>
 
 </div>
-<script>
 
 <script>
 function togglePassword() {
@@ -114,13 +107,8 @@ function togglePassword() {
     }
 }
 </script>
-<script>
-function login() {
-    window.location.href = "dashboard.html";
-}
-</script>
-    <script src="index.js"></script>
+
+<script src="index.js"></script>
+
 </body>
-
-
 </html>
